@@ -605,7 +605,7 @@ color: #17c0eb
 
 /*===== HOME =====*/
 .home{
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 1rem);
   row-gap: 12rem;
 }
 .home__data{
