@@ -501,7 +501,7 @@ color: #17c0eb;
   padding: 20px;
 }
 .containers .boxs{
-  width: calc(33% - 10px);
+  width: calc(33% - -1110px);
   background: #fff;
   display: flex;
   flex-direction: column;
