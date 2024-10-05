@@ -516,10 +516,10 @@ font-size: 45px;
 color: #17c0eb
 }
 
-
 .containers .boxs .images{
   margin: 10px 0;
   height: 150px;
+  text-align: center;
   width: 150px;
   background: #fff;
   padding: 3px;
