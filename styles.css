@@ -374,8 +374,34 @@ align-self: center;
   padding: 20px;
 }
 
+.containerx{
+  place-items: center;
+  max-width: 1100px;
+  display: flex;
+   margin-left: auto;
+   background: #f2f2f2;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: -180px;
+}
+
 
 .container .box{
+  width: calc(33% - 10px);
+  background: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+
+.containerx .boxx{
   width: calc(33% - 10px);
   background: #fff;
   margin-bottom: 20px;
@@ -392,6 +418,13 @@ margin-top: 10px;
 font-size: 45px;
 color: #17c0eb;
 }
+
+.boxx .quote i{
+  margin-top: 10px;
+  font-size: 45px;
+  color: #17c0eb;
+  }
+
 .container .box .image{
   margin: 10px 0;
   height: 150px;
@@ -400,6 +433,16 @@ color: #17c0eb;
   padding: 3px;
   border-radius: 50%;
 }
+
+.containerx .boxx .image{
+  margin: 10px 0;
+  height: 150px;
+  width: 150px;
+ 
+  padding: 3px;
+  border-radius: 50%;
+}
+
 .box .image img{
   height: 100%;
   width: 100%;
@@ -407,7 +450,23 @@ color: #17c0eb;
   object-fit: cover;
  
 }
+
+.boxx .image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+ 
+}
+
 .box p{
+  text-align: justify;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.boxx p{
   text-align: justify;
   margin-top: 8px;
   font-size: 16px;
@@ -419,6 +478,14 @@ color: #17c0eb;
   font-size: 18px;
   font-weight: 600;
 }
+
+.boxx .name_job{
+  margin: 10px 0 3px 0;
+  color: #212025;;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .rating i{
   font-size: 18px;
   color: #8e44ad;
@@ -442,6 +509,20 @@ color: #17c0eb;
     margin: 5px;
 }
 
+.btnx button{
+  background: var(--first-color);
+  width: 100%;
+  padding: 9px 0px;
+  outline: none;
+  border: 2px solid var(--first-color);
+  border-radius: 56px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--first-color);
+  transition: all 0.3s linear;
+}
+
 
 .btns button{
   background: var(--first-color);
@@ -457,12 +538,33 @@ color: #17c0eb;
   transition: all 0.3s linear;
 }
 
-
+.btnx button:first-child{
+  background:var(--first-color);
+  margin-right: 5px;
+}
 
 .btns button:first-child{
   background: #fff;
   margin-right: 5px;
 }
+
+.btnx button:last-child{
+  color: #fff;
+  align-items: center;
+margin-right: 30px;
+
+}
+.btnx button:first-child:hover{
+  background: var(--first-color);
+  color: #fff;
+}
+.btnx button:hover{
+  color: #fff;
+}
+
+
+
+
 .btns button:last-child{
   color: #fff;
   margin-left: 5px;
@@ -480,8 +582,21 @@ color: #17c0eb;
     margin-bottom: 20px;
   }
 }
+
+@media (max-width:1045px){
+  .containerx .boxx{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
 @media (max-width:710px){
   .container .box{
+    width: 100%;
+  }
+}
+
+@media (max-width:710px){
+  .containerx .boxx{
     width: 100%;
   }
 }
@@ -500,6 +615,8 @@ color: #17c0eb;
   flex-wrap: wrap;
   padding: 20px;
 }
+
+
 .containers .boxs{
   width: calc(33% - -1110px);
   background: #fff;
@@ -510,11 +627,16 @@ color: #17c0eb;
   padding: 20px 30px;
   border-radius: 5px;
 }
+
+
+
 .boxs .quotes i{
 margin-top: 10px;
 font-size: 45px;
 color: #17c0eb
 }
+
+
 
 .containers .boxs .images{
   margin: 10px 0;
@@ -525,6 +647,8 @@ color: #17c0eb
   padding: 3px;
   border-radius: 50%;
 }
+
+
 .boxs .images img{
   height: 100%;
   width: 100%;
@@ -532,6 +656,8 @@ color: #17c0eb
   object-fit: cover;
   border: 2px solid #fff;
 }
+
+
 .boxs p{
   text-align: center;
   margin-top: 8px;
@@ -546,6 +672,8 @@ color: #17c0eb
 
 
 
+
+
 @media (max-width:1045px){
   .containers .boxs{
     width: calc(50% - 10px);
@@ -557,6 +685,9 @@ color: #17c0eb
     width: 100%;
   }
 }
+
+
+
 
 /* Media Query Jika di antara 0-768 PX Maka akan mengerjakan blablabla  */
 @media screen and (max-width: 768px){
@@ -1150,7 +1281,13 @@ margin-bottom: -150px;
     margin-bottom: var(--mb-6);
   }
 
+  .section-titlessss{
+    margin-bottom: var(--mb-6);
+  }
 
+  .section-titlessss{
+    margin-top: 80px;
+  }
 
     .section-video{
     margin-bottom: var(--mb-2);
@@ -1165,6 +1302,20 @@ margin-bottom: -150px;
   margin-bottom: var(--mb-1);
   }
 
+  .sections-titlessss{
+    margin-bottom: var(--mb-2);
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-top: -2rem;
+  margin-bottom: var(--mb-1);
+  }
+
+
+  .section-title::after{
+    width: 80px;
+    top: 3rem;
+  }
 
   .section-title::after{
     width: 80px;
